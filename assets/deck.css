@@ -5864,3 +5864,33 @@ code {
     display: none;
   }
 }
+
+/* Direct link line ---------------------------------------------------------- */
+
+.big-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2em;
+  align-self: flex-start;
+  color: var(--accent);
+  font-size: clamp(1.6rem, 3.4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.12em;
+}
+
+.big-link:hover {
+  color: var(--paper);
+}
+
+.big-link span {
+  font-size: 0.6em;
+}
+
+/* Five-up cards: keep long words on one line */
+.kw-grid--five .kw__k {
+  font-size: clamp(1.25rem, 1.9vw, 1.8rem);
+  letter-spacing: -0.03em;
+}

@@ -12,37 +12,37 @@ Static browser deck: focus, build, iterate. No build step, no runtime dependenci
 - **01** — *Five parts. One loop.* Learn / Build / See it / Source it / Ship it.
 
 **Learn**
-- **02** — *Everything is available. Nothing is finished.* Access / Focus / Extraction / Finish.
-- **03** — *Pick a semester. Not a universe.* Ship / Automate / Understand / Rebuild.
-- **04** — *One tab. One question.* Write / Narrow / Note / Close.
-- **05** — *Do your own research.* YouTube / Docs / Search / Try.
-- **06** — *Feed it everything.* NotebookLM: docs, papers, videos.
-- **07** — *Talk it out. Keep the wheel.* Voice brainstorming; the agent can be wrong.
-- **08** — *Question your own answer.* Assumption / Bias / Blind spot / Evidence.
+- **02** — *Everything is available. Nothing is finished.*
+- **03** — *Pick a semester. Not a universe.*
+- **04** — *One tab. One question.*
+- **05** — *Do your own research.*
+- **06** — *Feed it everything.* NotebookLM.
+- **07** — *Talk it out. Keep the wheel.*
+- **08** — *Question your own answer.*
 
 **Build**
-- **09** — *Start with your own pain.* Itch / Workaround / Gap / You.
-- **10** — *Build anything. Any platform.* Web / Mac / Windows / iPhone / iPad / Android.
-- **11** — *The build is the syllabus.* Small / One / Queue / Ship.
-- **12** — *Start. Iterate. Refine. New idea.* The loop.
-- **13** — *Effort is the algorithm.* Start / Repeat / Still / Rep.
-- **14** — *Build in public. Learn in public.* Feedback / Accountability / Audience / Proof.
+- **09** — *Start with your own pain.*
+- **10** — *Build anything. Any platform.*
+- **11** — *The build is the syllabus.*
+- **12** — *Start. Iterate. Refine. New idea.*
+- **13** — *Effort is the algorithm.*
+- **14** — *Build in public. Learn in public.*
+- **15** — *Show your work. Make it fun.*
 
 **See it**
-- **15** — *Two builds. One loop.* Showcase opener.
-- **16** — *Point at the thing.* Image Annotation, with a real screenshot.
-- **17** — *A shelf. Not a graveyard.* TubeShelf, as a CSS mock.
+- **16** — *Two builds. One loop.*
+- **17** — *Point at the thing.* Image Annotation, real screenshot.
+- **18** — *A shelf. Not a graveyard.* TubeShelf, CSS mock.
 
 **Source it**
-- **18** — *90% is public. 10% is people.* Search / AI / NotebookLM / YouTube / People.
-- **19** — *Get the bookshelf.* O'Reilly Bookshelf.
-- **20** — *Buy it in November.* The annual Black Friday deal, about $199/year.
+- **19** — *90% is public. 10% is people.*
+- **20** — *O'Reilly Bookshelf.* Straight slide: go look at oreilly.com. About $199/year, usually around Black Friday.
 
 **Ship it**
 - **21** — *Confident. Humble.*
 - **22** — *Get inspired. Then get specific.*
-- **23** — *What is your blocker?* Time / Skill / Tools / Fear.
-- **24** — *Ship one thing.* Pick / Build / Return / Tell.
+- **23** — *What is your blocker?*
+- **24** — *Ship one thing.*
 
 ## Present
 
@@ -82,7 +82,7 @@ Hover a keyword card for its one-line detail (also on keyboard focus). Touch dev
 
 ```bash
 npm install
-npm run verify     # 43 checks at 1440×900, 1280×720, 390×844
+npm run verify     # 45 checks at 1440×900, 1280×720, 390×844
 ```
 
 Covers: structure, agenda, section chip, wheel, Home/End, hover-only detail, every content slide, diagram counts, screenshot, mock shelf, split bar, notes, and no overflow at all three sizes.

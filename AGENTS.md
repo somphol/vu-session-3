@@ -2,7 +2,7 @@
 
 ## 1. What it is
 
-A static browser deck for **Session 3: Learn. Build. Repeat. Just Do It!** — VU AI Exploration with Somphol Boonjing. Focus, build, iterate. Twenty-four numbered slides in five visible sections (Learn, Build, See it, Source it, Ship it), opening with an agenda, each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
+A static browser deck for **Session 3: Learn. Build. Repeat. Just Do It!** — VU AI Exploration with Somphol Boonjing. Focus, build, iterate. Twenty-four numbered slides in five visible sections (Learn 7, Build 7, See it 3, Source it 2, Ship it 4), opening with an agenda, each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
 
 ## 2. Commands
 
@@ -11,7 +11,7 @@ open index.html
 python3 -m http.server 4173     # http://localhost:4173
 
 npm install
-npm run verify                  # 43 checks
+npm run verify                  # 45 checks
 
 open "http://localhost:4173/#2" # #<screen>, cover is #1
 ```
@@ -38,7 +38,7 @@ No build step. Edit and reload.
 - **No italic serif for read-aloud sentences.** Emphasis is accent plus weight.
 - **Mouse wheel and Home/End navigate.** Wheel uses 40px accumulation and a 620ms lock, and yields to overflowing slides and open overlays; keep the help overlay in sync.
 - **Numbering.** Content slide `N` is screen `#N+1`. After inserting a slide, renumber `slide-index`, `data-kicker`, and the `SLIDE n —` comments (a single regex pass over slide blocks works; comments sit before each section).
-- **O'Reilly deal is approximate** (about $199/year, usually around Thanksgiving/Black Friday). The slide says “about”, “usually”, “verify”. Recheck before presenting.
+- **O'Reilly is one direct slide, not two.** Headline, “Go look at it.”, a large `oreilly.com` link, and one line: about $199/year, usually Black Friday, check library access. Do not turn it back into keyword cards or a catalogue list; the ask is to open the site. Price and dates are approximate — recheck before presenting.
 - **App facts dated November 2026.** Image Annotation: macOS 13+, arrow/text/export, source-safe save. TubeShelf: macOS 14+, on-device tagging with fallback, one JSON file, two web companions.
 - **The 90/10 split is rhetorical**, not measured.
 - **Do not publish** without the owner's go-ahead.
