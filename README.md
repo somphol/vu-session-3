@@ -1,4 +1,6 @@
-# Session 3 — VU AI Exploration with Somphol Boonjing
+# Session 3 — Learn. Build. Repeat. Just Do It!
+
+VU AI Exploration with Somphol Boonjing. Live: **https://somphol.github.io/vu-session-3/**
 
 Static browser deck: focus, build, iterate. No build step, no runtime dependencies. Double-click `index.html` and present.
 

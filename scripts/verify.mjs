@@ -132,7 +132,7 @@ async function main() {
       };
     });
 
-    check(boot.title === "Session 3: VU AI Exploration with Somphol Boonjing", "page title is exact");
+    check(boot.title === "Session 3: Learn. Build. Repeat. Just Do It! — VU AI Exploration", "page title is exact");
     check(boot.slides === SLIDES && boot.numbered === SLIDES - 1, "deck has 25 numbered content slides");
     check(boot.total === "25", "counter total is 25");
     check(boot.counterHidden && boot.active === "Cover", "cover is first and unnumbered");

@@ -2,7 +2,7 @@
 
 ## 1. What it is
 
-A static browser deck for **Session 3: VU AI Exploration with Somphol Boonjing** — focus, build, iterate. Twenty-four numbered slides in five visible sections (Learn, Build, See it, Source it, Ship it), opening with an agenda, each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
+A static browser deck for **Session 3: Learn. Build. Repeat. Just Do It!** — VU AI Exploration with Somphol Boonjing. Focus, build, iterate. Twenty-four numbered slides in five visible sections (Learn, Build, See it, Source it, Ship it), opening with an agenda, each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
 
 ## 2. Commands
 
@@ -54,8 +54,8 @@ No build step. Edit and reload.
 ## 6. Continuity
 
 - Local master: `~/Projects/vu-session-3`
-- Git: initialised on `main`, one commit, **no remote yet**. `.gitignore` and `.nojekyll` are in place.
-- Deployed copy: none.
+- Git: `main` on `origin` → https://github.com/somphol/vu-session-3
+- Deployed copy: **https://somphol.github.io/vu-session-3/** (GitHub Pages, branch `main`, root). Pushing to `main` redeploys automatically.
 
 ### Publish (needs an authenticated `gh`)
 
