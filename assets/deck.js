@@ -71,6 +71,7 @@
 
     if (sectionChip) {
       sectionChip.textContent = slides[current].dataset.section || "Session 3";
+      sectionChip.style.visibility = position === 0 ? "hidden" : "visible";
     }
 
     counterCurrent.textContent = position ? pad(position) : "";
