@@ -4,45 +4,21 @@ VU AI Exploration with Somphol Boonjing. Live: **https://somphol.github.io/vu-se
 
 Static browser deck: focus, build, iterate. No build step, no runtime dependencies. Double-click `index.html` and present.
 
-**24 numbered slides, five visible sections.** Opening agenda, then: **Learn** (7), **Build** (6), **See it** (3), **Source it** (3), **Ship it** (4). The current section is always shown in the top chrome. Every slide is big keywords plus one diagram; detail appears on hover or focus, and the full script is in the speaker notes (`N`).
-
-## Slides
-
-**Agenda**
-- **01** — *Five parts. One loop.* Learn / Build / See it / Source it / Ship it.
-
-**Learn**
-- **02** — *Everything is available. Nothing is finished.*
-- **03** — *Pick a semester. Not a universe.*
-- **04** — *One tab. One question.*
-- **05** — *Do your own research.*
-- **06** — *Feed it everything.* NotebookLM.
-- **07** — *Talk it out. Keep the wheel.*
-- **08** — *Question your own answer.*
-
-**Build**
-- **09** — *Start with your own pain.*
-- **10** — *Build anything. Any platform.*
-- **11** — *The build is the syllabus.*
-- **12** — *Start. Iterate. Refine. New idea.*
-- **13** — *Effort is the algorithm.*
-- **14** — *Build in public. Learn in public.*
-- **15** — *Show your work. Make it fun.*
-
-**See it**
+**24 numbered slides, five visible sections.** Opening agenda, then: **Learn** (7), **Build** (6), **See it**
 - **16** — *Two builds. One loop.*
 - **17** — *Point at the thing.* Image Annotation, real screenshot.
 - **18** — *A shelf. Not a graveyard.* TubeShelf, CSS mock.
+- **19** — *There is more. Take one.* Project Album (57 builds) and VU Project Ideas (54 briefs), both live links.
 
 **Source it**
-- **19** — *90% is public. 10% is people.*
-- **20** — *O'Reilly Bookshelf.* Straight slide: go look at oreilly.com. About $199/year, usually around Black Friday.
+- **20** — *90% is public. 10% is people.*
+- **21** — *O'Reilly Bookshelf.* Straight slide: go look at oreilly.com. About $199/year, usually around Black Friday.
 
 **Ship it**
-- **21** — *Confident. Humble.*
-- **22** — *Get inspired. Then get specific.*
-- **23** — *What is your blocker?*
-- **24** — *Ship one thing.*
+- **22** — *Confident. Humble.*
+- **23** — *Get inspired. Then get specific.*
+- **24** — *What is your blocker?*
+- **25** — *Ship one thing.*
 
 ## Present
 
@@ -82,7 +58,7 @@ Hover a keyword card for its one-line detail (also on keyboard focus). Touch dev
 
 ```bash
 npm install
-npm run verify     # 45 checks at 1440×900, 1280×720, 390×844
+npm run verify     # 47 checks at 1440×900, 1280×720, 390×844
 ```
 
 Covers: structure, agenda, section chip, wheel, Home/End, hover-only detail, every content slide, diagram counts, screenshot, mock shelf, split bar, notes, and no overflow at all three sizes.

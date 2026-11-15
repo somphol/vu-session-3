@@ -84,7 +84,7 @@ async function goTitle(page, base, title) {
   }, title);
   await wait(340);
 }
-const SLIDES = 25;
+const SLIDES = 26;
 
 async function main() {
   const server = createServer();
@@ -133,8 +133,8 @@ async function main() {
     });
 
     check(boot.title === "Session 3: Learn. Build. Repeat. Just Do It! — VU AI Exploration", "page title is exact");
-    check(boot.slides === SLIDES && boot.numbered === SLIDES - 1, "deck has 24 numbered content slides");
-    check(boot.total === "24", "counter total is 24");
+    check(boot.slides === SLIDES && boot.numbered === SLIDES - 1, "deck has 25 numbered content slides");
+    check(boot.total === "25", "counter total is 25");
     check(boot.counterHidden && boot.active === "Cover", "cover is first and unnumbered");
     check(boot.cards === SLIDES && boot.segs === SLIDES, "overview and progress cover every screen");
     check(!boot.overflow && boot.inert, "no overflow, closed panels inert");
@@ -173,7 +173,7 @@ async function main() {
     await page.keyboard.press("Home");
     await wait(300);
     const atHome = await page.evaluate(() => document.querySelector(".slide.is-active").dataset.title);
-    check(atEnd === "24" && atHome === "Cover", "Home and End jump to the ends");
+    check(atEnd === "25" && atHome === "Cover", "Home and End jump to the ends");
 
     console.log("\nInteractions");
 
@@ -274,6 +274,14 @@ async function main() {
     });
     check(shelf.rows === 6 && shelf.links === 3, "TubeShelf mock shelf and links render");
 
+    await goTitle(page, base, "There is more");
+    const inspo = await page.evaluate(() => {
+      const links = [...document.querySelectorAll(".slide.is-active .link-card")];
+      return { count: links.length, hrefs: links.map((a) => a.getAttribute("href")) };
+    });
+    check(inspo.count === 2, "inspiration slide links two more projects");
+    check(inspo.hrefs[0].includes("project-album") && inspo.hrefs[1].includes("vu_project_ideas"), "inspiration links are correct");
+
     await goTitle(page, base, "O'Reilly Bookshelf");
     const oreilly = await page.evaluate(() => {
       const a = document.querySelector(".slide.is-active");
@@ -308,7 +316,7 @@ async function main() {
       nextDisabled: document.querySelector("#nextBtn").disabled,
       chip: document.querySelector("#sectionChip").textContent
     }));
-    check(last.steps === 4 && last.counter === "24" && last.nextDisabled, "closing slide is last, with four keywords");
+    check(last.steps === 4 && last.counter === "25" && last.nextDisabled, "closing slide is last, with four keywords");
     check(last.chip === "Ship it", "closing section is labelled Ship it");
 
     await page.keyboard.press("n");
