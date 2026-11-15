@@ -84,7 +84,7 @@ async function goTitle(page, base, title) {
   }, title);
   await wait(340);
 }
-const SLIDES = 26;
+const SLIDES = 30;
 
 async function main() {
   const server = createServer();
@@ -133,8 +133,8 @@ async function main() {
     });
 
     check(boot.title === "Session 3: Learn. Build. Repeat. Just Do It! — VU AI Exploration", "page title is exact");
-    check(boot.slides === SLIDES && boot.numbered === SLIDES - 1, "deck has 25 numbered content slides");
-    check(boot.total === "25", "counter total is 25");
+    check(boot.slides === SLIDES && boot.numbered === SLIDES - 1, "deck has 29 numbered content slides");
+    check(boot.total === "29", "counter total is 29");
     check(boot.counterHidden && boot.active === "Cover", "cover is first and unnumbered");
     check(boot.cards === SLIDES && boot.segs === SLIDES, "overview and progress cover every screen");
     check(!boot.overflow && boot.inert, "no overflow, closed panels inert");
@@ -165,7 +165,7 @@ async function main() {
     await page.mouse.wheel({ deltaY: -140 });
     await wait(800);
     const wheelUp = await page.evaluate(() => document.querySelector("#counterCurrent").textContent);
-    check(wheelDown === "03" && wheelUp === "02", "mouse wheel moves forward and back");
+    check(wheelDown === "04" && wheelUp === "03", "mouse wheel moves forward and back");
 
     await page.keyboard.press("End");
     await wait(300);
@@ -173,9 +173,15 @@ async function main() {
     await page.keyboard.press("Home");
     await wait(300);
     const atHome = await page.evaluate(() => document.querySelector(".slide.is-active").dataset.title);
-    check(atEnd === "25" && atHome === "Cover", "Home and End jump to the ends");
+    check(atEnd === "29" && atHome === "Cover", "Home and End jump to the ends");
 
     console.log("\nInteractions");
+
+    const dividers = await page.evaluate(() =>
+      [...document.querySelectorAll(".slide--section")].map((el) => el.dataset.section)
+    );
+    check(dividers.length === 5, "five section dividers exist");
+    check(dividers.join(",") === "Learn,Build,See it,Source it,Ship it", "dividers are in section order");
 
     await goTitle(page, base, "Pick a semester");
     const course = await page.evaluate(() => {
@@ -316,7 +322,7 @@ async function main() {
       nextDisabled: document.querySelector("#nextBtn").disabled,
       chip: document.querySelector("#sectionChip").textContent
     }));
-    check(last.steps === 4 && last.counter === "25" && last.nextDisabled, "closing slide is last, with four keywords");
+    check(last.steps === 4 && last.counter === "29" && last.nextDisabled, "closing slide is last, with four keywords");
     check(last.chip === "Ship it", "closing section is labelled Ship it");
 
     await page.keyboard.press("n");

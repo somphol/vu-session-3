@@ -5947,3 +5947,33 @@ code {
     grid-template-columns: 1fr;
   }
 }
+
+/* Section dividers ---------------------------------------------------------- */
+
+.section__lede {
+  font-family: var(--sans);
+  font-style: normal;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.section__agenda li {
+  font-size: clamp(15px, 1.3vw, 18px);
+  color: var(--paper);
+}
+
+.section__agenda span {
+  font-size: 12px;
+}
+
+/* Divider emphasis */
+.slide--section .section__title {
+  color: var(--accent);
+}
+
+.slide--section .section__lede {
+  color: var(--paper);
+  max-width: 30ch;
+}
