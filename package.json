@@ -1,0 +1,14 @@
+{
+  "name": "vu-session-3",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive browser deck for Session 3: VU AI Exploration with Somphol Boonjing",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.0.0"
+  }
+}

@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Session 3: VU AI Exploration with Somphol Boonjing — focus, build, iterate.">
+  <title>Session 3: VU AI Exploration with Somphol Boonjing</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7f5ef'/%3E%3Ctext x='32' y='43' font-family='Helvetica,Arial' font-size='26' font-weight='700' text-anchor='middle' fill='%233b6a00'%3E03%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/deck.css">
+</head>
+<body>
+
+  <header class="chrome chrome--top">
+    <a class="brand" href="#1" data-goto="0">
+      <span class="brand__dot" aria-hidden="true"></span>
+      VU <span class="brand__sep">/</span> Session 03
+    </a>
+    <span class="chrome__section" id="sectionChip" aria-live="polite">Today</span>
+    <div class="chrome__actions">
+      <div class="timer" role="group" aria-label="Session timer">
+        <button class="timer__display" id="timer" type="button" aria-label="Start session timer" aria-pressed="false">
+          <span class="timer__dot" aria-hidden="true"></span>
+          <span id="timerText">00:00</span>
+        </button>
+        <button class="timer__reset" id="timerReset" type="button" aria-label="Reset session timer" title="Reset timer">&#8635;</button>
+      </div>
+      <button class="ghost-btn" type="button" data-open="overview" aria-haspopup="dialog">
+        <span class="ghost-btn__icon" aria-hidden="true">&#9638;</span> <span class="ghost-btn__label">Slides</span>
+      </button>
+      <button class="ghost-btn ghost-btn--icon" type="button" data-open="help" aria-haspopup="dialog" aria-label="Keyboard shortcuts">
+        <span aria-hidden="true">?</span>
+      </button>
+      <button class="ghost-btn ghost-btn--icon" id="fullscreen" type="button" aria-label="Enter fullscreen" title="Fullscreen (F)">
+        <span aria-hidden="true">&#9974;</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="deck" data-dir="next">
+
+    <!-- ============================================================
+         COVER
+         ============================================================ -->
+<section class="slide slide--title is-active" data-title="Cover" data-kicker="VU AI Exploration" data-cover aria-label="Cover">
+      <div class="slide__inner">
+        <div class="title__num" aria-hidden="true">03</div>
+
+        <div class="title__top reveal" style="--d: .05s">
+          <p class="eyebrow"><span class="eyebrow__line" aria-hidden="true"></span> VU &middot; Interactive session</p>
+        </div>
+
+        <h1 class="title reveal" style="--d: .14s">
+          <span class="title__session">Session 3</span>
+          <span class="title__main">
+            <span class="title__line">Learn. Build.</span>
+            <span class="title__line title__line--accent"><em>Repeat.</em></span>
+          </span>
+          <span class="title__with">with <strong>Somphol Boonjing</strong></span>
+        </h1>
+
+        <div class="title__bottom reveal" style="--d: .28s">
+          <button class="begin" type="button" data-next>
+            Start the session
+            <span class="begin__arrow" aria-hidden="true">&rarr;</span>
+          </button>
+          <p class="title__hint">
+            <span class="hint hint--keys">
+              <kbd>&larr;</kbd><kbd>&rarr;</kbd> to move
+              <span aria-hidden="true">&middot;</span>
+              <kbd>O</kbd> overview
+              <span aria-hidden="true">&middot;</span>
+              <kbd>N</kbd> notes
+            </span>
+            <span class="hint hint--touch">Swipe to move &middot; tap <span class="hint__glyph" aria-hidden="true">&#9638;</span> for the overview</span>
+          </p>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Open with the constraint, not the tools.</strong> Session 3 is the loop: choose one thing, learn just enough, build it, refine, then let the build suggest the next thing.</p>
+        <ul>
+          <li>One line to set up the hour: &ldquo;Nothing is hidden anymore. The scarce skill is staying on one question long enough to finish.&rdquo;</li>
+          <li>Keep the first ten minutes fast. The demos land better after the room has the frame.</li>
+        </ul>
+      </template>
+    </section>
+    <section class="slide slide--content" data-title="Today" data-kicker="Today &middot; 01" data-section="Today" aria-label="Today, in five parts">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">01</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Today, in five parts
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Five parts.<br>
+          <em>One loop.</em>
+        </h2>
+
+        <ul class="kw-grid kw-grid--five reveal" style="--d: .2s">
+          <li class="kw" tabindex="0"><span class="kw__k">Learn</span><span class="kw__d">focus, sources, critical thinking</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Build</span><span class="kw__d">what, where, the loop</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">See it</span><span class="kw__d">two real apps</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Source it</span><span class="kw__d">where answers live</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Ship it</span><span class="kw__d">mindset, momentum, your turn</span></li>
+        </ul>
+
+        <p class="takeaway-line reveal" style="--d: .3s">Every part feeds the same loop. <em>Start anywhere.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Show the map before the territory.</strong> Five parts, one loop. Name them, then move.</p>
+        <ul>
+          <li>Learn: how to stay on one question and use sources without drowning.</li>
+          <li>Build: what to build, which platform, and the loop that keeps it moving.</li>
+          <li>See it: two real apps, so this is not theory.</li>
+          <li>Source it: where answers actually live, free and paid.</li>
+          <li>Ship it: confidence, momentum, the blocker question, and the take-home action.</li>
+        </ul>
+      </template>
+    </section>
+
+
+    <!-- ============================================================
+         SLIDE 1 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Abundance is solved" data-kicker="Opening &middot; 02" aria-label="Abundance is solved, attention is not">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">02</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          The new scarcity
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Everything is available.<br>
+          <em>Nothing is finished.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Access</span><span class="kw__d">solved</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Focus</span><span class="kw__d">one question</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Extraction</span><span class="kw__d">the next step</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Finish</span><span class="kw__d">the rare part</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="A wide field of dots with one highlighted path ending in a single ring">
+            <defs>
+              <pattern id="dots01" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.7" fill="rgba(20,22,26,0.22)"></circle>
+              </pattern>
+            </defs>
+            <rect x="0" y="0" width="420" height="300" rx="10" fill="url(#dots01)"></rect>
+            <path d="M28 250 C 130 250, 150 152, 248 152 S 328 152, 356 152" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+            <circle cx="28" cy="250" r="7" fill="var(--paper)"></circle>
+            <circle cx="356" cy="152" r="34" fill="none" stroke="var(--accent)" stroke-width="2.5"></circle>
+            <circle cx="356" cy="152" r="5" fill="var(--accent)"></circle>
+          </svg>
+          <figcaption>Many paths. One chosen.</figcaption>
+        </figure>
+        </div>
+
+        <p class="ask reveal" style="--d: .3s">What did you <em>finish</em> last month?</p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Name the shift.</strong> Five years ago, finding the material was the hard part. Now the material is free, infinite and better produced than most lectures. The bottleneck moved to selection and attention.</p>
+        <ul>
+          <li>Ask the question on screen. Let two people answer. Most will name a topic, not an output.</li>
+          <li>Follow-ups: &ldquo;Count your open tabs. That is your real syllabus.&rdquo; &ldquo;Name one thing you could finish in a single sitting.&rdquo;</li>
+          <li>&ldquo;The internet is a library with no librarian and no closing time. You need a syllabus.&rdquo;</li>
+          <li>Vast knowledge is not the advantage. Extracting the next useful thing is.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 2 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Pick a semester" data-kicker="Focus &middot; 03" aria-label="Pick a semester, not a universe">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">03</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Course selection
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Pick a semester.<br>
+          <em>Not a universe.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Ship</span><span class="kw__d">One video, then docs. A URL you can send.</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Automate</span><span class="kw__d">One chat, one tutorial. Runs on your Mac.</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Understand</span><span class="kw__d">An explainer, then NotebookLM. Explain it closed.</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Rebuild</span><span class="kw__d">One reference. Your own smaller version.</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A large catalogue of courses with four chosen for this semester">
+              <g fill="rgba(20,22,26,0.08)">
+                <rect x="24" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="60" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="96" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="132" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="168" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="204" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="240" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="276" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="312" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="348" y="40" width="30" height="24" rx="4"></rect>
+                <rect x="24" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="60" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="96" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="132" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="168" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="204" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="240" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="276" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="312" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="348" y="74" width="30" height="24" rx="4"></rect>
+                <rect x="24" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="60" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="96" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="132" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="168" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="204" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="240" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="276" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="312" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="348" y="108" width="30" height="24" rx="4"></rect>
+                <rect x="24" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="60" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="96" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="132" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="168" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="204" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="240" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="276" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="312" y="142" width="30" height="24" rx="4"></rect>
+                <rect x="348" y="142" width="30" height="24" rx="4"></rect>
+              </g>
+              <rect x="24" y="206" width="30" height="26" rx="4" fill="var(--accent)"></rect>
+              <rect x="60" y="206" width="30" height="26" rx="4" fill="var(--accent)"></rect>
+              <rect x="96" y="206" width="30" height="26" rx="4" fill="var(--accent)"></rect>
+              <rect x="132" y="206" width="30" height="26" rx="4" fill="var(--accent)"></rect>
+              <path d="M182 219 H244" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M232 209 L246 219 L232 229" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="262" y="196" width="126" height="46" rx="8" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M282 212 H356 M282 226 H340" stroke="rgba(20,22,26,0.35)" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>Thousands listed. Four enrolled.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>The course-selection metaphor does the work.</strong> Nobody tries to attend every lecture at a university. Online, we do exactly that: forty tabs, twelve playlists, nothing finished.</p>
+        <ul>
+          <li>Click through the four cards. Each has a source, an output and a finish line.</li>
+          <li>The finish line matters more than the topic. &ldquo;Understand AI&rdquo; never ends; &ldquo;explain it with the laptop closed&rdquo; does.</li>
+          <li>Ask: which one would you actually finish this week?</li>
+          <li>Detail is on the card only after a click. Do not read it aloud.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 3 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="One tab, one question" data-kicker="Focus &middot; 04" aria-label="One tab, one question">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">04</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          The focus protocol
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          One tab.<br>
+          <em>One question.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Write</span><span class="kw__d">the question first</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Narrow</span><span class="kw__d">this page, not ten</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Note</span><span class="kw__d">what changes next</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Close</span><span class="kw__d">the other tabs</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="Many sources narrowing through a funnel into one question">
+            <rect x="30" y="24" width="360" height="14" rx="4" fill="rgba(20,22,26,0.12)"></rect>
+            <rect x="68" y="52" width="284" height="14" rx="4" fill="rgba(20,22,26,0.14)"></rect>
+            <rect x="106" y="80" width="208" height="14" rx="4" fill="rgba(20,22,26,0.16)"></rect>
+            <rect x="146" y="108" width="128" height="14" rx="4" fill="rgba(20,22,26,0.18)"></rect>
+            <path d="M158 142 L262 142 L226 222 L194 222 Z" fill="rgba(59,106,0,0.10)" stroke="var(--accent)" stroke-width="2"></path>
+            <rect x="168" y="246" width="84" height="14" rx="7" fill="var(--accent)"></rect>
+          </svg>
+          <figcaption>Ten sources. One question.</figcaption>
+        </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">&ldquo;The one thing I am learning&nbsp;is&hellip;&rdquo; <em>Three answers means no session.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>This is the practical answer to &ldquo;how do I stay focused?&rdquo;</strong> The tool is not the problem. The missing artifact is a written question with a finish line.</p>
+        <ul>
+          <li>Demonstrate the extension on one page: summarize only the section that answers the current question.</li>
+          <li>Every new tab is a context switch with a cost, even if you never read it.</li>
+          <li>Timebox: twenty-five minutes, one source thread, one output.</li>
+          <li>Prompt to keep: &ldquo;I am building X. Teach me only the next step, five bullets, stop before advanced options.&rdquo;</li>
+          <li>FOMO answer: the tab will still be there next week; the momentum will not.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 4 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Do your own research" data-kicker="Build &middot; 05" aria-label="How to get started: do your own research">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">05</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          How to start
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Do your<br>
+          <em>own research.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">YouTube</span><span class="kw__d">watch someone build</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Docs</span><span class="kw__d">the official path</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Search</span><span class="kw__d">the exact error</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Try</span><span class="kw__d">in a scratch folder</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="Three sources feeding one running build">
+              <rect x="26" y="42" width="132" height="46" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <path d="M48 56 L68 65 L48 74 Z" fill="var(--accent)"></path>
+              <path d="M82 60 H138 M82 70 H126" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <rect x="26" y="106" width="132" height="46" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <path d="M46 120 H138 M46 132 H118 M46 144 H130" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <rect x="26" y="170" width="132" height="46" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <circle cx="52" cy="193" r="9" fill="none" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <path d="M64 186 H138 M64 198 H120" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M170 65 C 210 65, 200 130, 236 140" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <path d="M170 129 H232" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <path d="M170 193 C 210 193, 200 150, 236 142" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <rect x="248" y="104" width="142" height="86" rx="8" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M248 126 H390" stroke="var(--accent)" stroke-width="2"></path>
+              <path d="M262 146 H300" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M308 146 H360" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M262 166 H372" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>Three sources. One build.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>There is no course to wait for.</strong> OpenCode is the example: the official docs, a handful of YouTube walkthroughs, search, and ten minutes in a scratch folder are enough to start.</p>
+        <ul>
+          <li>Official docs first: opencode.ai. Read install, config, and skills. Skim, do not study.</li>
+          <li>Then YouTube: search &ldquo;OpenCode tutorial&rdquo;, watch one build at 1.5&times;, copy one thing.</li>
+          <li>Use the tool to learn the tool: ask the agent &ldquo;how do I add a skill here?&rdquo; and make it show you.</li>
+          <li>Search the exact error text. Someone has already hit it.</li>
+          <li>Two sources minimum before you trust a claim. Then try it in a scratch folder, not your real project.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 5 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Feed it everything" data-kicker="Sources &middot; 06" aria-label="NotebookLM: digest documents, papers and videos">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">06</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Digest a corpus
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Feed it<br>
+          <em>everything.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Docs</span><span class="kw__d">PDFs, notes, pages</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Papers</span><span class="kw__d">cited answers</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Video</span><span class="kw__d">YouTube links</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Ask</span><span class="kw__d">across all sources</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="Three sources feeding one notebook, with a cited answer coming out">
+              <rect x="24" y="40" width="118" height="48" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <path d="M42 56 H124 M42 68 H108 M42 80 H118" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <rect x="24" y="104" width="118" height="48" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <path d="M42 120 H124 M42 132 H100 M42 144 H114" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <rect x="24" y="168" width="118" height="48" rx="8" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></rect>
+              <path d="M46 182 L62 192 L46 202 Z" fill="var(--accent)"></path>
+              <path d="M74 186 H128 M74 198 H116" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M156 64 C 196 64, 180 130, 208 140" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <path d="M156 128 H204" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <path d="M156 192 C 196 192, 180 150, 208 142" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2"></path>
+              <circle cx="232" cy="140" r="30" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <path d="M276 140 H308" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M298 130 L310 140 L298 150" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="318" y="104" width="80" height="72" rx="8" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M332 124 H384 M332 138 H372 M332 152 H380" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="384" cy="168" r="7" fill="none" stroke="var(--accent)" stroke-width="2"></circle>
+              <path d="M381 168 L384 171 L390 163" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <figcaption>Sources in. Cited answers out.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>NotebookLM is for a body of material, not a single fact.</strong> Load the docs, papers and videos, then ask across all of them.</p>
+        <ul>
+          <li>Good inputs: a folder of PDFs, a documentation set, research papers, long YouTube talks, your own notes.</li>
+          <li>Ask grounded questions and follow the citation back to the page before you believe it.</li>
+          <li>Use the audio overview for a first pass on a dense subject; read the sources for the details.</li>
+          <li>It only knows what you gave it. It will not tell you what is missing from the corpus.</li>
+          <li>Compare with plain chat: chat answers from general knowledge; a notebook answers from your sources.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 6 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Talk it out" data-kicker="Focus &middot; 07" aria-label="Brainstorm out loud with a live agent, and stay in control">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">07</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Think out loud
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Talk it out.<br>
+          <em>Keep the wheel.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Voice</span><span class="kw__d">Gemini Live, ChatGPT voice</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Aloud</span><span class="kw__d">ideas arrive mid-sentence</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Wrong</span><span class="kw__d">the agent can be wrong</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Control</span><span class="kw__d">you make the call</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A microphone feeding an agent, with a decision gate before the idea is accepted">
+              <rect x="30" y="92" width="56" height="94" rx="28" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M58 118 V160" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M40 196 C 40 222, 76 222, 76 196" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M58 222 V242 M40 242 H76" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M100 126 C 110 114, 110 114, 120 126" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M104 148 C 118 132, 118 132, 132 148" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <rect x="146" y="100" width="152" height="96" rx="16" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M146 196 L170 196 L158 214 Z" fill="var(--accent)"></path>
+              <path d="M168 128 H272 M168 148 H250 M168 168 H262" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M306 148 H330" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M322 138 L334 148 L322 158" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="364" cy="148" r="30" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <path d="M352 148 L360 156 L378 138" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <figcaption>Speak. Listen. Decide.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Voice changes the quality of the thinking, not just the speed.</strong> Talking out loud forces you to finish a sentence, and the unfinished ones are where the idea was hiding.</p>
+        <ul>
+          <li>Use Gemini Live, ChatGPT voice, or just talk to the coding agent while it reads the repo.</li>
+          <li>Say the messy version first. Do not compose. The agent&rsquo;s reply is a mirror, not an answer key.</li>
+          <li>It will be confidently wrong. Check names, numbers and APIs before you act.</li>
+          <li>You are the decision maker. The agent proposes; you accept, reject or reshape.</li>
+          <li>Stop when you have one next action. Talking is not the deliverable.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 7 — Learn
+         ============================================================ -->
+<section data-section="Learn" class="slide slide--content" data-title="Question your answer" data-kicker="Mindset &middot; 08" aria-label="Question your own assumptions and blind spots">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">08</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Critical thinking
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Question your<br>
+          <em>own answer.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Assumption</span><span class="kw__d">the part you never checked</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Bias</span><span class="kw__d">who does this serve?</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Blind spot</span><span class="kw__d">ask what is missing</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Evidence</span><span class="kw__d">or it is just a story</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="An iceberg: a small visible part above the waterline and a large unseen part below">
+              <path d="M210 34 L246 96 H174 Z" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"></path>
+              <path d="M174 96 H246 L292 196 L232 268 H158 L118 196 Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"></path>
+              <path d="M18 96 H402" stroke="rgba(20,22,26,0.4)" stroke-width="2.5" stroke-dasharray="7 8"></path>
+              <path d="M66 176 H132" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M120 168 L134 176 L120 184" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M306 208 H356" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M344 200 L358 208 L344 216" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <figcaption>Most of it sits under the waterline.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Search &ldquo;critical thinking&rdquo; and learn the tools properly.</strong> They are old, cheap and not specific to AI: falsification, steelmanning, base rates, incentives, selection bias, survivorship bias, confirmation bias.</p>
+        <ul>
+          <li>Ask of any answer, including your own: what would change my mind?</li>
+          <li>Steelman the opposite view before you reject it. If you cannot state it fairly, you do not understand it.</li>
+          <li>Check the incentive behind the source. Free content still has an author with a goal.</li>
+          <li>Ask the agent: &ldquo;what am I missing, and what would make this wrong?&rdquo; Then verify one claim yourself.</li>
+          <li>Blind spots are not found by thinking harder. They are found by asking someone who sees differently.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 8 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="Start with your pain" data-kicker="Build &middot; 09" aria-label="What to build: start with your own pain point">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">09</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          What to build
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Start with<br>
+          <em>your own pain.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Itch</span><span class="kw__d">you feel it weekly</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Workaround</span><span class="kw__d">what you do now</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Gap</span><span class="kw__d">one step missing</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">You</span><span class="kw__d">one user first</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="One highlighted task in a week of tasks, turned into a small app window">
+              <rect x="26" y="40" width="168" height="220" rx="10" fill="none" stroke="rgba(20,22,26,0.18)" stroke-width="2"></rect>
+              <rect x="46" y="64" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="94" y="64" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="142" y="64" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="46" y="102" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="94" y="102" width="34" height="26" rx="4" fill="var(--accent)"></rect>
+              <rect x="142" y="102" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="46" y="140" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="94" y="140" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <rect x="142" y="140" width="34" height="26" rx="4" fill="rgba(20,22,26,0.10)"></rect>
+              <path d="M218 126 H262" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M252 116 L264 126 L252 136" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="276" y="86" width="116" height="82" rx="6" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M276 106 H392" stroke="var(--accent)" stroke-width="2"></path>
+              <path d="M290 126 H342 M290 146 H370" stroke="rgba(20,22,26,0.28)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M264 190 H404" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>One annoyance. One small app.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Answer &ldquo;what should I build?&rdquo; with your own annoyance, not someone else&rsquo;s trend.</strong></p>
+        <ul>
+          <li>Ask the room: what did you do twice this week that annoyed you? That is the project.</li>
+          <li>The workaround is the spec. Write down the steps you take today; the app removes one of them.</li>
+          <li>One user first: you. If you do not use it twice, it was not a real pain.</li>
+          <li>Small is not a limitation. Small is what makes the first version finishable tonight.</li>
+          <li>Both demos later started this way: an arrow needed to replace a paragraph; saved videos needed a shelf.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 9 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="Build anything" data-kicker="Build &middot; 10" aria-label="Build on any platform: web, Windows, Mac, iPhone, iPad, Android">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">10</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Pick a platform
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Build anything.<br>
+          <em>Any platform.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid kw-grid--three">
+            <li class="kw" tabindex="0"><span class="kw__k">Web</span><span class="kw__d">one link, any device</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Mac</span><span class="kw__d">Swift and Xcode</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Windows</span><span class="kw__d">C# and .NET</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">iPhone</span><span class="kw__d">Swift, then App Store</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">iPad</span><span class="kw__d">same app, bigger canvas</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Android</span><span class="kw__d">Kotlin, then Play</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A browser window, a laptop, a phone and a tablet">
+              <rect x="28" y="52" width="164" height="108" rx="8" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M28 76 H192" stroke="var(--accent)" stroke-width="2"></path>
+              <path d="M44 94 H116 M44 112 H140 M44 130 H104" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <rect x="246" y="76" width="126" height="82" rx="6" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+              <path d="M232 172 H386" stroke="rgba(20,22,26,0.4)" stroke-width="2.5" stroke-linecap="round"></path>
+              <rect x="52" y="198" width="52" height="84" rx="10" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+              <path d="M68 208 H88" stroke="rgba(20,22,26,0.4)" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="78" cy="270" r="4" fill="rgba(20,22,26,0.4)"></circle>
+              <rect x="146" y="212" width="86" height="66" rx="8" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+              <circle cx="189" cy="270" r="4" fill="rgba(20,22,26,0.4)"></circle>
+              <rect x="272" y="198" width="76" height="84" rx="10" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M300 290 H320" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="310" cy="274" r="4" fill="var(--accent)"></circle>
+            </svg>
+            <figcaption>Three shapes, same loop.</figcaption>
+          </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">The platform is a detail. <em>The build is the point.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>This slide exists to remove a false limit.</strong> Students assume they must pick one lane. You can build anything: a web app, a Windows app, a Mac app, and with enough homework an iPhone, iPad or Android app.</p>
+        <ul>
+          <li>Web is the fastest to share: a link, any device, nothing to install.</li>
+          <li>Mac and Windows give you real files, native speed and offline use. Swift/Xcode for Mac, C#/.NET for Windows.</li>
+          <li>iPhone and iPad need more homework: Xcode, signing, App Store review. Android needs Kotlin and Play.</li>
+          <li>Cross-platform options exist (Tauri, Electron, Flutter, React Native) when you want one codebase.</li>
+          <li>Do not choose the platform first. Choose the pain, then the smallest container that reaches the user.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 10 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="The build is the syllabus" data-kicker="Build &middot; 11" aria-label="The build is the syllabus">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">11</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          The method
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          The build<br>
+          <em>is the syllabus.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Small</span><span class="kw__d">smallest thing that runs</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">One</span><span class="kw__d">variable per run</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Queue</span><span class="kw__d">capture the tangent</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Ship</span><span class="kw__d">version two</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="A staircase rising in four steps with an arrow">
+            <path d="M30 262 H120 V210 H210 V158 H300 V106 H390" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linejoin="round"></path>
+            <path d="M330 92 L392 102 L358 146" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="75" cy="236" r="6" fill="var(--accent)"></circle>
+            <circle cx="165" cy="184" r="6" fill="var(--accent)"></circle>
+            <circle cx="255" cy="132" r="6" fill="var(--accent)"></circle>
+          </svg>
+          <figcaption>Each step is the next question.</figcaption>
+        </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">You don&rsquo;t need the whole map. <em>You need the next turn.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>This is the core habit of the session.</strong> Learning and building are not sequential. Each one asks the next question for the other.</p>
+        <ul>
+          <li>Real example: I started with a rectangle and a click handler, then learned state, then layout.</li>
+          <li>Emphasise the idea queue. The tangent becomes the next iteration, not a detour.</li>
+          <li>&ldquo;What if I build it wrong?&rdquo; Wrong versions are how you find the right question.</li>
+          <li>What the build teaches that a tutorial cannot: boundaries, vocabulary, taste, momentum.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 11 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="The loop" data-kicker="Build &middot; 12" aria-label="Start, iterate, refine, new idea">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">12</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          The loop
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Start. Iterate.<br>
+          <em>Refine. New idea.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Start</span><span class="kw__d">smallest version that runs</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Iterate</span><span class="kw__d">one variable per run</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Refine</span><span class="kw__d">remove before you add</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">New idea</span><span class="kw__d">the build suggests it</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="Four stages arranged in a continuous loop">
+              <circle cx="210" cy="150" r="98" fill="none" stroke="rgba(20,22,26,0.22)" stroke-width="2.5" stroke-dasharray="5 9"></circle>
+              <circle cx="210" cy="52" r="15" fill="#fffdf8" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <circle cx="308" cy="150" r="15" fill="#fffdf8" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <circle cx="210" cy="248" r="15" fill="#fffdf8" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <circle cx="112" cy="150" r="15" fill="#fffdf8" stroke="var(--accent)" stroke-width="2.5"></circle>
+              <path d="M236 68 L252 80 L234 88" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M292 176 L280 194 L302 196" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M184 232 L168 220 L186 212" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M128 124 L140 106 L118 104" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="210" cy="150" r="5" fill="var(--accent)"></circle>
+            </svg>
+            <figcaption>Back to start, with a better question.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Click each station as you talk.</strong> This is the slide the room should photograph.</p>
+        <ul>
+          <li><strong>Start</strong> buys information. A running skeleton tells you more than another hour of video.</li>
+          <li><strong>Iterate</strong> is one variable at a time, so cause and effect stay visible.</li>
+          <li><strong>Refine</strong> is mostly subtraction: fewer features, clearer names, one path.</li>
+          <li><strong>New idea</strong> arrives from use, not brainstorming. The build proposes the next build.</li>
+          <li>&ldquo;You are not trying to finish the app. You are trying to keep the loop turning.&rdquo;</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 12 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="Effort is the algorithm" data-kicker="Momentum &middot; 13" aria-label="Effort is the algorithm">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">13</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Momentum
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Effort is<br>
+          <em>the algorithm.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Start</span><span class="kw__d">ten minutes</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Repeat</span><span class="kw__d">compounds</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Still</span><span class="kw__d">expensive</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Rep</span><span class="kw__d">thirty minutes</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="A flat line of no effort and a rising curve of repeated reps">
+            <path d="M48 250 H378 M48 250 V44" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+            <path d="M48 214 H378" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-dasharray="6 8"></path>
+            <path d="M48 226 C 150 220, 236 190, 300 130 S 356 72, 372 58" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"></path>
+          </svg>
+          <figcaption>Reps compound. Standing still does not.</figcaption>
+        </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">Actions breed momentum. <em>A skipped rep is the only expensive one.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Close the loop on motivation.</strong> Motivation is usually the result of movement, not the precondition for it.</p>
+        <ul>
+          <li>Three rules: actions breed momentum (a ten-minute start beats a ten-day plan); momentum compounds (each finished loop makes the next cheaper); stillness is expensive (the vocabulary leaks away between sessions).</li>
+          <li>Tell them about a day you did not feel like building, and what ten minutes changed.</li>
+          <li>Repetition over intensity: three short sessions beat one heroic weekend.</li>
+          <li>&ldquo;Don&rsquo;t stay still&rdquo; means do not spend a month choosing the stack.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 13 — Build
+         ============================================================ -->
+<section data-section="Build" class="slide slide--content" data-title="Build in public" data-kicker="Momentum &middot; 14" aria-label="Build in public and its benefits">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">14</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Build in public
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Build in public.<br>
+          <em>Learn in public.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Feedback</span><span class="kw__d">before launch, not after</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Accountability</span><span class="kw__d">you ship because you said so</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Audience</span><span class="kw__d">compounds with every post</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Proof</span><span class="kw__d">the work explains itself</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A small build shared outward, with replies coming back">
+              <rect x="146" y="96" width="128" height="104" rx="10" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M146 122 H274" stroke="var(--accent)" stroke-width="2"></path>
+              <path d="M164 146 H236 M164 164 H252 M164 182 H218" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M128 110 C 96 118, 82 132, 74 150" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M292 110 C 324 118, 338 132, 346 150" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+              <ellipse cx="72" cy="172" rx="40" ry="26" fill="#fffdf8" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></ellipse>
+              <path d="M56 210 L60 186" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M56 166 H88 M56 178 H78" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <ellipse cx="348" cy="172" rx="40" ry="26" fill="#fffdf8" stroke="rgba(20,22,26,0.35)" stroke-width="2.5"></ellipse>
+              <path d="M364 210 L360 186" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M332 166 H364 M332 178 H354" stroke="rgba(20,22,26,0.3)" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M210 226 V252" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M200 242 L210 254 L220 242" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <figcaption>Share the build, not the secrets.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Public does not mean polished.</strong> Post the small thing: a screenshot, a short clip, what broke, what you learned. The point is the loop, not the launch.</p>
+        <ul>
+          <li>Feedback arrives before you over-invest in the wrong feature.</li>
+          <li>Public commitment is cheap accountability. Say what you will ship this week, then ship it.</li>
+          <li>An audience compounds: each post is a small asset, and opportunities arrive through the work, not through networking.</li>
+          <li>It is also documentation. Future you, and future employers, can see the progress.</li>
+          <li>Keep private: credentials, customer data, anything under NDA. Share the mechanism, not the secrets.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 14 — Show your work
+         ============================================================ -->
+    <section data-section="Build" class="slide slide--content" data-title="Show your work" data-kicker="Build &middot; 15" aria-label="Show your work and make it fun to share">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">15</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Show your work
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Show your work.<br>
+          <em>Make it fun.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Clip</span><span class="kw__d">two minutes, screen recording</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Shot</span><span class="kw__d">one screenshot, one line</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Demo</span><span class="kw__d">the app running, not the slides</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Fun</span><span class="kw__d">no polish required</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A screen with a play button and signals going out">
+              <rect x="72" y="62" width="276" height="164" rx="12" fill="none" stroke="var(--accent)" stroke-width="2.5"></rect>
+              <path d="M72 96 H348" stroke="var(--accent)" stroke-width="2"></path>
+              <circle cx="88" cy="79" r="4" fill="rgba(20,22,26,0.35)"></circle>
+              <circle cx="102" cy="79" r="4" fill="rgba(20,22,26,0.35)"></circle>
+              <circle cx="116" cy="79" r="4" fill="rgba(20,22,26,0.35)"></circle>
+              <path d="M186 122 L246 164 L186 206 Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"></path>
+              <path d="M348 144 C 376 144, 388 132, 396 118" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M348 172 C 382 172, 396 172, 404 172" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M348 200 C 376 200, 388 212, 396 226" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <circle cx="404" cy="112" r="7" fill="var(--accent)"></circle>
+              <circle cx="410" cy="172" r="7" fill="var(--accent)"></circle>
+              <circle cx="404" cy="232" r="7" fill="var(--accent)"></circle>
+              <path d="M96 254 H324" stroke="rgba(20,22,26,0.25)" stroke-width="2.5" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>Small clip. Real app. Shared.</figcaption>
+          </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">If it was fun to make, <em>it can be fun to show.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Showing the work is part of the loop, not a reward at the end.</strong> A two-minute clip or one screenshot is enough. The point is frequency, not production value.</p>
+        <ul>
+          <li>Formats: screen recording, screenshot with one line, a short YouTube video, a build log, a demo GIF.</li>
+          <li>Show the app running, the bug you fixed, the ugly middle, the small win. Skip the slide deck.</li>
+          <li>Make it fun: a silly title, a before/after, a two-minute timer. If it feels like homework you will stop.</li>
+          <li>Post it where your people are: the group chat, a repo, YouTube, a short post. Link the code if it is public.</li>
+          <li>Weekly beats perfect. One clip a week compounds faster than one polished launch a year.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 15 — See it
+         ============================================================ -->
+<section data-section="See it" class="slide slide--section" data-title="Two builds" data-kicker="Showcase &middot; 16" aria-label="Two builds, one loop">
+      <div class="slide__inner section">
+        <div class="section__main">
+          <p class="eyebrow reveal" style="--d: .02s">
+            <span class="slide-index">16</span>
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            Showcase
+          </p>
+
+          <h2 class="section__title reveal" style="--d: .1s">
+            Two builds.<br>
+            <em>One loop.</em>
+          </h2>
+
+          <ul class="kw-grid kw-grid--three reveal" style="--d: .24s">
+            <li class="kw" tabindex="0"><span class="kw__k">Annotate</span><span class="kw__d">point at the thing</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">TubeShelf</span><span class="kw__d">keep what you saved</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Lesson</span><span class="kw__d">the loop again</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Switch from theory to evidence.</strong> Everything so far is cheap to say. These two apps are what the loop produced.</p>
+        <ul>
+          <li>Both are small, local, and solve a personal annoyance.</li>
+          <li>Both were built by iterating on a running version, not by planning the finished product.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 16 — See it
+         ============================================================ -->
+<section data-section="See it" class="slide slide--content" data-title="Point at the thing" data-kicker="Showcase &middot; 17" aria-label="Showcase: Image Annotation">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">17</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Build 01 &middot; macOS
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Point at<br>
+          <em>the thing.</em>
+        </h2>
+
+        <div class="showcase showcase--lean reveal" style="--d: .18s">
+          <figure class="shot">
+            <img src="assets/img/annotator.png" alt="Image Annotator open on macOS with an image and drawing tools" loading="lazy">
+            <figcaption>Image Annotation &middot; 1.0 &middot; macOS 13+</figcaption>
+          </figure>
+
+          <div class="showcase__side">
+            <ul class="kw-grid kw-grid--stack">
+              <li class="kw" tabindex="0"><span class="kw__k">Arrow</span><span class="kw__d">one gesture</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Text</span><span class="kw__d">one line</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Export</span><span class="kw__d">full resolution</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Safe</span><span class="kw__d">never overwrites</span></li>
+            </ul>
+            <p class="takeaway-line">An arrow is clearer<br>than a <em>paragraph</em>.</p>
+          </div>
+        </div>
+
+        <div class="example-links reveal" style="--d: .28s">
+          <a href="https://github.com/somphol/image-annotator" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">&#8599;</span></a>
+          <a href="https://github.com/somphol/image-annotator/releases/latest" target="_blank" rel="noopener noreferrer">Download 1.0 <span aria-hidden="true">&#8599;</span></a>
+          <p class="example-links__note">macOS only &middot; offline &middot; no account</p>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Show the workflow, not the toolbar.</strong> Screenshot &rarr; one arrow &rarr; one line of text &rarr; save &rarr; paste into the agent chat.</p>
+        <ul>
+          <li>The insight: most agent mistakes are reference mistakes. A markup file removes ambiguity that prose cannot.</li>
+          <li>Features behind the three words: any colour with a readable outline; move, reshape and restyle after drawing; undo and redo; native-resolution export; saves a new <code>-annotated</code> copy and refuses to overwrite the source.</li>
+          <li>Iteration evidence: v1 only drew arrows. Text, styling, undo and native export arrived from use.</li>
+          <li>The source-safe rule started as a bug fix.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 17 — See it
+         ============================================================ -->
+<section data-section="See it" class="slide slide--content" data-title="A shelf, not a graveyard" data-kicker="Showcase &middot; 18" aria-label="Showcase: TubeShelf">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">18</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Build 02 &middot; macOS
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          A shelf.<br>
+          <em>Not a graveyard.</em>
+        </h2>
+
+        <div class="showcase showcase--lean reveal" style="--d: .18s">
+          <figure class="shot shot--mock" aria-label="Mock of the TubeShelf library window">
+            <div class="mock">
+              <div class="mock__bar">
+                <span class="mock__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="mock__title">TubeShelf &middot; All videos</span>
+                <span class="mock__count">312</span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__side">
+                  <span class="mock__item is-on">All videos</span>
+                  <span class="mock__item">Favorites</span>
+                  <span class="mock__item">Unsorted</span>
+                  <span class="mock__item">Three.js</span>
+                  <span class="mock__item">Swift &amp; macOS</span>
+                  <span class="mock__item">Learning science</span>
+                </div>
+                <div class="mock__grid">
+                  <span class="mock__thumb mock__thumb--a"></span>
+                  <span class="mock__thumb mock__thumb--b"></span>
+                  <span class="mock__thumb mock__thumb--c"></span>
+                  <span class="mock__thumb mock__thumb--d"></span>
+                  <span class="mock__thumb mock__thumb--e"></span>
+                  <span class="mock__thumb mock__thumb--f"></span>
+                </div>
+              </div>
+            </div>
+            <figcaption>TubeShelf &middot; one JSON file &middot; no account</figcaption>
+          </figure>
+
+          <div class="showcase__side">
+            <ul class="kw-grid kw-grid--stack">
+              <li class="kw" tabindex="0"><span class="kw__k">Paste</span><span class="kw__d">real title</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Tag</span><span class="kw__d">on-device</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Present</span><span class="kw__d">category as a deck</span></li>
+              <li class="kw" tabindex="0"><span class="kw__k">Local</span><span class="kw__d">one JSON file</span></li>
+            </ul>
+            <p class="takeaway-line">Watch later is where<br>videos <em>disappear</em>.</p>
+          </div>
+        </div>
+
+        <div class="example-links reveal" style="--d: .28s">
+          <a href="https://github.com/somphol/tubeshelf" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">&#8599;</span></a>
+          <a href="https://somphol.github.io/tubeshelf-web-ro/" target="_blank" rel="noopener noreferrer">Viewer <span aria-hidden="true">&#8599;</span></a>
+          <a href="https://somphol.github.io/tubeshelf-web-rw/" target="_blank" rel="noopener noreferrer">Web app <span aria-hidden="true">&#8599;</span></a>
+          <p class="example-links__note">macOS 14+ &middot; data stays local</p>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Two lessons in one demo.</strong> It solves a real annoyance, and the same product exists in three shapes: native app, read-only web viewer, editable web app.</p>
+        <ul>
+          <li>Paste a link live: title, channel and category arrive automatically; duplicates are caught by video ID.</li>
+          <li>Press <kbd>⌘↩</kbd> to present a category. That is the feature people remember.</li>
+          <li>On-device tagging needs Apple Intelligence or a local model; a keyword classifier is the fallback.</li>
+          <li>No account, one JSON file: the user can back it up and leave.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 18 — Source it
+         ============================================================ -->
+<section data-section="Source it" class="slide slide--content" data-title="90% public, 10% people" data-kicker="Sources &middot; 19" aria-label="Most answers are already public">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">19</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Where answers live
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          90% is public.<br>
+          <em>10% is people.</em>
+        </h2>
+
+        <div class="split90 reveal" style="--d: .2s">
+          <div class="split90__bar" aria-hidden="true">
+            <span class="split90__public" style="width: 90%">90%</span>
+            <span class="split90__people" style="width: 10%">10%</span>
+          </div>
+          <div class="split90__labels">
+            <span>Search &middot; summary &middot; NotebookLM &middot; YouTube &middot; books</span>
+            <span>Judgement &middot; context &middot; access</span>
+          </div>
+        </div>
+
+        <ul class="kw-grid kw-grid--five reveal" style="--d: .28s">
+          <li class="kw" tabindex="0"><span class="kw__k">Search</span><span class="kw__d">the fact</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">AI</span><span class="kw__d">the shape</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">NotebookLM</span><span class="kw__d">the corpus</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">YouTube</span><span class="kw__d">the workflow</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">People</span><span class="kw__d">the last 10%</span></li>
+        </ul>
+
+        <p class="takeaway-line reveal" style="--d: .36s">Ask people for the 10% that was never written down. <em>Not the 90% you could find.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Why is so much public?</strong> Publishing builds reputation, hiring pipelines, consulting leads and software adoption. The incentive to teach is real; exploit it.</p>
+        <ul>
+          <li>Match the source to the question, as the four words say. Search for a fact, a model for orientation, NotebookLM for a corpus, video for a workflow.</li>
+          <li>The 10% that needs people: judgement on your specific situation, access to a system, context that is sensitive, a recommendation you trust.</li>
+          <li>Ask well when you get there: what you tried, what you ruled out, the decision you need.</li>
+          <li>The 90/10 split is a rhetorical model, not a measurement.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 19 — Source it
+         ============================================================ -->
+<section data-section="Source it" class="slide slide--content" data-title="Get the bookshelf" data-kicker="Sources &middot; 20" aria-label="Get an O'Reilly Bookshelf subscription">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">20</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Depth on demand
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Get the<br>
+          <em>bookshelf.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Books</span><span class="kw__d">full length</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Drafts</span><span class="kw__d">before release</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Code</span><span class="kw__d">runnable</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Library</span><span class="kw__d">check access first</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="A shelf of books of different heights">
+            <path d="M48 246 H372" stroke="rgba(20,22,26,0.45)" stroke-width="3" stroke-linecap="round"></path>
+            <rect x="72" y="128" width="34" height="118" rx="3" fill="var(--accent)"></rect>
+            <rect x="116" y="156" width="30" height="90" rx="3" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+            <rect x="156" y="104" width="38" height="142" rx="3" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+            <rect x="204" y="146" width="28" height="100" rx="3" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+            <rect x="242" y="120" width="36" height="126" rx="3" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+            <rect x="288" y="168" width="28" height="78" rx="3" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2.5"></rect>
+          </svg>
+          <figcaption>One searchable shelf.</figcaption>
+        </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">O&rsquo;Reilly Bookshelf. <em>Check your library access first.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Make the case for paid depth without turning it into an ad.</strong> The free web is excellent for orientation and terrible for completeness.</p>
+        <ul>
+          <li>One searchable shelf: O'Reilly plus partner publishers, technical books, courses, early releases, code samples and certification prep.</li>
+          <li>Use it surgically: one chapter before a build, one chapter when you are stuck. It is a reference shelf, not a reading list.</li>
+          <li>Worth it for systems, databases, languages and architecture &mdash; the topics where a bad blog post costs more than a subscription.</li>
+          <li>No pricing claimed. Ask the room to check employer, university or public-library access before paying.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 20 — Source it
+         ============================================================ -->
+<section data-section="Source it" class="slide slide--content" data-title="Buy it in November" data-kicker="Sources &middot; 21" aria-label="O'Reilly Bookshelf annual sale, about 199 dollars a year">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">21</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          The annual deal
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Buy it<br>
+          <em>in November.</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Black Friday</span><span class="kw__d">the usual sale window</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">$199</span><span class="kw__d">about, per year</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Yearly</span><span class="kw__d">one subscription, whole shelf</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Check</span><span class="kw__d">dates and price before buying</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="A calendar with one month highlighted and a price tag">
+              <rect x="34" y="56" width="196" height="188" rx="10" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5"></rect>
+              <path d="M34 92 H230" stroke="rgba(20,22,26,0.3)" stroke-width="2.5"></path>
+              <path d="M74 42 V70 M190 42 V70" stroke="rgba(20,22,26,0.4)" stroke-width="2.5" stroke-linecap="round"></path>
+              <g fill="rgba(20,22,26,0.10)">
+                <rect x="54" y="108" width="28" height="24" rx="4"></rect>
+                <rect x="96" y="108" width="28" height="24" rx="4"></rect>
+                <rect x="138" y="108" width="28" height="24" rx="4"></rect>
+                <rect x="180" y="108" width="28" height="24" rx="4"></rect>
+                <rect x="54" y="144" width="28" height="24" rx="4"></rect>
+                <rect x="96" y="144" width="28" height="24" rx="4"></rect>
+                <rect x="180" y="144" width="28" height="24" rx="4"></rect>
+                <rect x="54" y="180" width="28" height="24" rx="4"></rect>
+                <rect x="96" y="180" width="28" height="24" rx="4"></rect>
+                <rect x="138" y="180" width="28" height="24" rx="4"></rect>
+                <rect x="180" y="180" width="28" height="24" rx="4"></rect>
+                <rect x="54" y="216" width="28" height="18" rx="4"></rect>
+                <rect x="96" y="216" width="28" height="18" rx="4"></rect>
+                <rect x="138" y="216" width="28" height="18" rx="4"></rect>
+              </g>
+              <rect x="138" y="144" width="28" height="24" rx="4" fill="var(--accent)"></rect>
+              <path d="M258 138 H300" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round"></path>
+              <path d="M290 128 L302 138 L290 148" fill="none" stroke="rgba(20,22,26,0.3)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M312 108 H390 L404 138 L390 168 H312 Z" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"></path>
+              <circle cx="326" cy="138" r="5" fill="#fffdf8" stroke="var(--accent)" stroke-width="2"></circle>
+              <path d="M340 128 H384 M340 148 H372" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>Usually November. Verify before you buy.</figcaption>
+          </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">About <em>$199 a year</em> for a whole knowledge repo.</p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Practical buying advice, not a sponsorship.</strong> O&rsquo;Reilly Bookshelf has run an annual sale around Thanksgiving and Black Friday in recent years, usually near $199 USD for a year. Treat the date and price as approximate and check the current offer.</p>
+        <ul>
+          <li>Check the official O&rsquo;Reilly site for the current price and dates before quoting a number to the room.</li>
+          <li>Compare with employer, university or public-library access, which is often already paid for.</li>
+          <li>At roughly $199 for a year of books, courses, early releases and code, it is cheaper than one bad architecture decision.</li>
+          <li>Use it surgically: one chapter before a build, one chapter when stuck.</li>
+          <li>Prices and promotions change; say &ldquo;about&rdquo; and &ldquo;usually&rdquo; when you present this.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 21 — Ship it
+         ============================================================ -->
+<section data-section="Ship it" class="slide slide--content" data-title="Confident. Humble." data-kicker="Mindset &middot; 22" aria-label="Confidence and humility">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">22</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Mindset
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Confident.<br>
+          <em>Humble.</em>
+        </h2>
+
+        <div class="kw-split">
+<ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Ship</span><span class="kw__d">before ready</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Taste</span><span class="kw__d">ahead of skill</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Demo</span><span class="kw__d">not the product</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Test</span><span class="kw__d">before trust</span></li>
+        </ul>
+
+        <figure class="figure reveal" style="--d: .28s">
+          <svg viewBox="0 0 420 300" role="img" aria-label="A balance with level pans">
+            <path d="M210 92 V250 M210 250 H150 M210 250 H270" fill="none" stroke="rgba(20,22,26,0.35)" stroke-width="2.5" stroke-linecap="round"></path>
+            <path d="M92 110 H328" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"></path>
+            <circle cx="210" cy="110" r="7" fill="var(--accent)"></circle>
+            <path d="M92 110 L64 172 M92 110 L120 172 M58 172 H126" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M328 110 L300 172 M328 110 L356 172 M294 172 H362" fill="none" stroke="rgba(20,22,26,0.4)" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <figcaption>Both, in the same hour.</figcaption>
+        </figure>
+        </div>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>The honest version of &ldquo;anyone can build.&rdquo;</strong> Yes, you can start today. No, the first version will not be good, and that is not a reason to stop.</p>
+        <ul>
+          <li>Confidence is about the next action, not the final outcome. Your taste being ahead of your skill is the engine, not the verdict.</li>
+          <li>Humility is about evidence: test the happy path, read the error, ask someone who knows. The happy path is the easy 20%.</li>
+          <li>The field will move. Hold the loop loosely and the tools tighter.</li>
+          <li>Ask: &ldquo;What is the difference between being a beginner and being careless?&rdquo;</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 22 — Ship it
+         ============================================================ -->
+<section data-section="Ship it" class="slide slide--content" data-title="Get inspired" data-kicker="Closing &middot; 23" aria-label="Get inspired">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">23</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Closing
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Get inspired.<br>
+          <em>Then get specific.</em>
+        </h2>
+
+        <blockquote class="quote quote--lead reveal" style="--d: .22s">
+          &ldquo;They kept starting.&rdquo;
+          <footer>That is the whole trick</footer>
+        </blockquote>
+
+        <ul class="kw-grid reveal" style="--d: .3s">
+          <li class="kw" tabindex="0"><span class="kw__k">Steal</span><span class="kw__d">the mechanism</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Rebuild</span><span class="kw__d">your old work</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Annoyance</span><span class="kw__d">best first project</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Start</span><span class="kw__d">again</span></li>
+        </ul>
+
+        <p class="takeaway-line reveal" style="--d: .32s">Steal the mechanism. <em>Not the pixels.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>End on energy, then hand them a task.</strong> Do not let the session finish on abstraction.</p>
+        <ul>
+          <li>Inspiration has a half-life of about a day. Pair it immediately with a tiny action.</li>
+          <li>Where it comes from: someone's demo, your own old work, a stupid annoyance, and this room.</li>
+          <li>Ask one person to name what they are going to build, out loud, before they leave.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 23 — Ship it
+         ============================================================ -->
+<section data-section="Ship it" class="slide slide--content" data-title="What is your blocker?" data-kicker="Closing &middot; 24" aria-label="What is stopping you from starting to build">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">24</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          What is stopping you
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          What is<br>
+          <em>your blocker?</em>
+        </h2>
+
+        <div class="kw-split reveal" style="--d: .2s">
+          <ul class="kw-grid">
+            <li class="kw" tabindex="0"><span class="kw__k">Time</span><span class="kw__d">you have thirty minutes</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Skill</span><span class="kw__d">the agent has read more</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Tools</span><span class="kw__d">free, already installed</span></li>
+            <li class="kw" tabindex="0"><span class="kw__k">Fear</span><span class="kw__d">ship it anyway</span></li>
+          </ul>
+
+          <figure class="figure">
+            <svg viewBox="0 0 420 300" role="img" aria-label="An arrow passing through an opening in a wall">
+              <rect x="120" y="54" width="34" height="92" rx="4" fill="rgba(20,22,26,0.12)"></rect>
+              <rect x="120" y="192" width="34" height="54" rx="4" fill="rgba(20,22,26,0.12)"></rect>
+              <rect x="266" y="54" width="34" height="192" rx="4" fill="rgba(20,22,26,0.12)"></rect>
+              <path d="M156 150 H262" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"></path>
+              <path d="M236 124 L266 150 L236 176" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="120" cy="150" r="9" fill="var(--accent)"></circle>
+              <path d="M30 250 H390" stroke="rgba(20,22,26,0.25)" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <figcaption>There is a gap. Take it.</figcaption>
+          </figure>
+        </div>
+
+        <p class="takeaway-line reveal" style="--d: .32s">The builder is already here. <em>Drive it.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Ask the room directly: if you have not started, why not?</strong> Then answer the four blockers before anyone says them out loud.</p>
+        <ul>
+          <li>Time: thirty minutes is a real session. The first version only has to run.</li>
+          <li>Skill: you have the most capable digital builder available so far. It knows more syntax than you; it does not know what you want.</li>
+          <li>Tools: free tiers, already installed, no permission needed. Use a scratch folder.</li>
+          <li>Fear: private first if you must, public when it runs. The version nobody sees teaches nothing.</li>
+          <li>Perfectionism is the same blocker wearing a suit. Ship the ugly one.</li>
+          <li>Close: &ldquo;The builder is not the bottleneck. The decision to start is.&rdquo;</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- ============================================================
+         SLIDE 24 — Ship it
+         ============================================================ -->
+<section data-section="Ship it" class="slide slide--content" data-title="Ship one thing" data-kicker="Closing &middot; 25" aria-label="Your turn: one action before the next session">
+      <div class="slide__inner">
+        <p class="eyebrow reveal" style="--d: .02s">
+          <span class="slide-index">25</span>
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          Your turn
+        </p>
+
+        <h2 class="statement reveal" style="--d: .1s">
+          Ship one thing.<br>
+          <em>Before next week.</em>
+        </h2>
+
+        <ul class="kw-grid  reveal" style="--d: .22s">
+          <li class="kw" tabindex="0"><span class="kw__k">Pick</span><span class="kw__d">one card</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Build</span><span class="kw__d">thirty minutes</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Return</span><span class="kw__d">with evidence</span></li>
+          <li class="kw" tabindex="0"><span class="kw__k">Tell</span><span class="kw__d">next week</span></li>
+        </ul>
+
+        <p class="takeaway-line reveal" style="--d: .32s">A broken build is data. <em>A blank week is the only failure.</em></p>
+      </div>
+
+      <template class="slide-notes">
+        <p><strong>Make the ask concrete.</strong> One project, one small version, two loops, one sentence of evidence.</p>
+        <ul>
+          <li>Bring back a link, a screenshot, or a running app, plus one sentence about what the build taught you that the tutorial did not.</li>
+          <li>Write the three words on the board if there is one.</li>
+          <li>Ask for a show of hands: who already knows what they will build?</li>
+          <li>Offer the deck and links afterwards. Then stop talking.</li>
+        </ul>
+      </template>
+    </section>
+
+    <!-- Add future slides above this line. See docs/ADDING-SLIDES.md -->
+
+  </main>
+
+  <nav class="chrome chrome--bottom" aria-label="Slide navigation">
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="counter" aria-live="polite">
+      <span id="counterCurrent">01</span>
+      <span class="counter__slash" aria-hidden="true">/</span>
+      <span class="counter__total" id="counterTotal">02</span>
+    </div>
+    <div class="navbtns">
+      <button class="nav-btn" type="button" id="prevBtn" aria-label="Previous slide" title="Previous (&larr;)">
+        <span aria-hidden="true">&larr;</span>
+      </button>
+      <button class="nav-btn" type="button" id="nextBtn" aria-label="Next slide" title="Next (&rarr;)">
+        <span aria-hidden="true">&rarr;</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       OVERLAYS
+       ============================================================ -->
+  <div class="overlay" id="overview" role="dialog" aria-modal="true" aria-labelledby="overviewTitle" aria-hidden="true">
+    <div class="overlay__panel">
+      <header class="overlay__head">
+        <div>
+          <p class="overlay__eyebrow">Navigate</p>
+          <h2 id="overviewTitle">All slides</h2>
+        </div>
+        <button class="overlay__close" type="button" data-close aria-label="Close overview">&times;</button>
+      </header>
+      <div class="overview-grid" id="overviewGrid"></div>
+      <p class="overlay__foot"><kbd>O</kbd> or <kbd>Esc</kbd> to close</p>
+    </div>
+  </div>
+
+  <div class="overlay" id="help" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-hidden="true">
+    <div class="overlay__panel overlay__panel--narrow">
+      <header class="overlay__head">
+        <div>
+          <p class="overlay__eyebrow">Controls</p>
+          <h2 id="helpTitle">Keyboard shortcuts</h2>
+        </div>
+        <button class="overlay__close" type="button" data-close aria-label="Close shortcuts">&times;</button>
+      </header>
+      <dl class="shortcuts">
+        <div><dt><kbd>&larr;</kbd> <kbd>&rarr;</kbd> <span>or</span> <kbd>Space</kbd></dt><dd>Move between slides</dd></div>
+        <div><dt><kbd>Home</kbd> <kbd>End</kbd></dt><dd>First or last slide</dd></div>
+        <div><dt><kbd>O</kbd></dt><dd>Open the slide overview</dd></div>
+        <div><dt>Mouse wheel</dt><dd>Next or previous slide</dd></div>
+        <div><dt><kbd>N</kbd></dt><dd>Show or hide speaker notes</dd></div>
+        <div><dt><kbd>T</kbd></dt><dd>Start or pause the session timer</dd></div>
+        <div><dt><kbd>F</kbd></dt><dd>Enter or leave fullscreen</dd></div>
+        <div><dt><kbd>?</kbd></dt><dd>This shortcut list</dd></div>
+        <div><dt><kbd>Esc</kbd></dt><dd>Close panels or stop a video</dd></div>
+      </dl>
+      <p class="overlay__foot">On touch: swipe left or right.</p>
+    </div>
+  </div>
+
+  <aside class="notes" id="notesPanel" aria-label="Speaker notes" aria-hidden="true">
+    <div class="notes__head">
+      <div>
+        <p class="notes__eyebrow">Speaker notes</p>
+        <p class="notes__slide" id="notesSlide">Slide 01</p>
+      </div>
+      <button class="notes__close" type="button" id="notesClose" aria-label="Close speaker notes">&times;</button>
+    </div>
+    <div class="notes__body" id="notesBody"></div>
+  </aside>
+
+  <script src="assets/deck.js" defer></script>
+</body>
+</html>
