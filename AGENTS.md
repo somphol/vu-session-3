@@ -54,6 +54,27 @@ No build step. Edit and reload.
 ## 6. Continuity
 
 - Local master: `~/Projects/vu-session-3`
+- Git: initialised on `main`, one commit, **no remote yet**. `.gitignore` and `.nojekyll` are in place.
 - Deployed copy: none.
+
+### Publish (needs an authenticated `gh`)
+
+```bash
+cd ~/Projects/vu-session-3
+gh auth login                                   # if not already
+gh repo create vu-session-3 --public --source=. --remote=origin --push
+
+# enable Pages from the branch root
+gh api -X POST "repos/{owner}/vu-session-3/pages" \
+  -f "source[branch]=main" -f "source[path]=/"
+
+# then check the build and the URL
+gh api "repos/{owner}/vu-session-3/pages" --jq '.html_url, .status'
+```
+
+Live URL will be `https://<owner>.github.io/vu-session-3/`.
+
+After the first deploy, update this file and `README.md` with the real URL in the same push as any other change, so the handoff is never stale.
+
 - Presentation target: browser fullscreen (`F`), 1440×900 or 1280×720.
 - Session 2 remains at `~/Projects/vu-session-2` as the earlier reference deck.
