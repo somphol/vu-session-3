@@ -2,7 +2,7 @@
 
 ## 1. What it is
 
-A static browser deck for **Session 3: Learn. Build. Repeat. Just Do It!** — VU AI Exploration with Somphol Boonjing. Focus, build, iterate. Twenty-four numbered slides in five visible sections (Learn 7, Build 7, See it 4, Source it 2, Ship it 4), opening with an agenda, each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
+A static browser deck for **Session 3: Learn. Build. Repeat. Just Do It!** — VU AI Exploration with Somphol Boonjing. Focus, build, iterate. Twenty-nine numbered slides in five visible sections (Learn 7, Build 7, See it 4, Source it 2, Ship it 4), opening with an agenda and four dedicated dividers (the See it divider is “Two builds. One loop.”), each slide built on one claim, four to six very large keyword cards and one inline SVG diagram. Keyword detail is one short phrase revealed on hover or focus; the full script is in speaker notes. Light theme, no backend.
 
 ## 2. Commands
 
@@ -11,7 +11,7 @@ open index.html
 python3 -m http.server 4173     # http://localhost:4173
 
 npm install
-npm run verify                  # 47 checks
+npm run verify                  # 49 checks
 
 open "http://localhost:4173/#2" # #<screen>, cover is #1
 ```
@@ -29,6 +29,7 @@ No build step. Edit and reload.
 ## 4. Decisions and constraints
 
 - **Five sections, always visible.** `data-section` drives the top chrome chip: Learn, Build, See it, Source it, Ship it. The cover falls back to “Session 3”; the agenda uses “Today”. Do not add a slide without a section.
+- **Each section opens with a divider.** `slide--section` plus `data-section`; accent-green section name, one line of what is inside, three or four agenda words. Do not leave a section without one.
 - **The agenda is slide 01.** Five cards, one per section, hover detail naming what is inside. It is the memory jolt at the start; keep it to five items.
 - **Big words, one claim per slide.** Four to six keyword cards, headline, one diagram. No paragraphs.
 - **Detail only on hover or focus.** `.kw__d` is opacity 0 until `:hover` / `:focus`; always visible on `(hover: none)` and in print. Do not make detail permanent on desktop without being asked.
