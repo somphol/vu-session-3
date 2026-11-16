@@ -273,12 +273,13 @@ async function main() {
     await goTitle(page, base, "A shelf, not a graveyard");
     const shelf = await page.evaluate(() => {
       const a = document.querySelector(".slide.is-active");
+      const img = a.querySelector(".shot img");
       return {
-        rows: a.querySelectorAll(".mock__thumb").length,
+        shot: img ? img.naturalWidth : 0,
         links: a.querySelectorAll(".example-links a").length
       };
     });
-    check(shelf.rows === 6 && shelf.links === 3, "TubeShelf mock shelf and links render");
+    check(shelf.shot > 1000 && shelf.links === 3, "TubeShelf screenshot and links render");
 
     await goTitle(page, base, "There is more");
     const inspo = await page.evaluate(() => {

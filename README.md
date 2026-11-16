@@ -95,7 +95,7 @@ Covers structure, agenda, dividers, section chip, wheel, Home/End, hover-only de
 index.html                 slides, notes, inline SVG diagrams
 assets/deck.css            light theme, keyword cards, dividers, diagrams
 assets/deck.js             navigation, wheel, section chip, overlays, timer
-assets/img/                Image Annotation screenshots
+assets/img/                app screenshots (TubeShelf, Image Annotation)
 docs/ADDING-SLIDES.md      templates + component reference
 scripts/verify.mjs         headless browser checks
 AGENTS.md                  handoff notes for the next agent
